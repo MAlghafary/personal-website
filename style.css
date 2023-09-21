@@ -1,0 +1,122 @@
+/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+:root {
+    --light-black:#222625;
+    --white:#FFFFFF;
+    --gray:#7C7E70;
+    --dark-green:#73A012;
+    --light-green:#CADA78;
+    --font-size: 1.3rem;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+}
+/* border box model: https://css-tricks.com/box-sizing/ */
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+  padding : 0;
+  margin: 0;
+  font-family: var(--sans);
+  background-color: var(--light-black);
+  color: var(--white);
+}
+
+h1,h2,h3 {
+    margin: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* nav section */
+
+nav {
+    font-family: var(--mono);
+    padding: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+nav [class*="fa-"] {
+   font-size: 150%;
+   color: var(--dark-green);
+}
+
+nav h1 [class*="fa-"] {
+    font-size: 100%;
+}
+nav a:hover {
+    color: var(--dark-green);
+}
+
+nav h1 a {
+    font-family: var(--sans);
+}
+
+nav h1 a:hover {
+    font-family: var(--sans);
+    color: var(--white);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+
+
+/* intro styles */
+#intro {
+    padding-bottom: 10rem;
+}
+
+#intro p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#intro .name {
+    font-family: var(--mono);
+}
+
+.name span {
+    font-family: var(--sans);
+    font-size: 4rem;
+    display: block;
+    color: var(--light-green);
+}
+
+#intro h2 {
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+#contact-me {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3rem 0;
+    font-size: 0.8rem
+}
