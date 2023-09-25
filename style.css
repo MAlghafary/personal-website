@@ -5,6 +5,7 @@
     --gray:#7C7E70;
     --dark-green:#73A012;
     --light-green:#CADA78;
+    --wood: burlywood;
     --font-size: 1.3rem;
     --mono: "Oxygen mono", monospace;
     --sans: Oxygen, sans-serif;
@@ -85,8 +86,17 @@ nav li:first-child {
     text-align: center;
 }
 
+.resume-btn {
+    background-color: var(--wood);
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: var(--light-black);
+}
 
-
+.resume-btn:hover{
+    color: var(--light-black);
+    background-color: var(--white);
+}
 /* intro styles */
 #intro {
     padding-bottom: 10rem;
@@ -119,4 +129,18 @@ nav li:first-child {
     margin: 0 auto;
     padding: 3rem 0;
     font-size: 0.8rem
+}
+
+@media (min-width:850px) {
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    nav li:first-child {
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto;
+    }
+    
 }
